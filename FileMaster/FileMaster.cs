@@ -70,6 +70,9 @@ namespace FileMasterLibrary
         /// <param name="pieceSize">The size of each piece in bytes.</param>
         public void FileSplit(string inputFilePath, string outputFolderPath, int pieceSize)
         {
+            //Reset class properties so it has a clean slate
+            ResetProperties();
+
             //Ensure that the input file exists
             if(!File.Exists(inputFilePath))
             {
@@ -155,6 +158,9 @@ namespace FileMasterLibrary
         /// <param name="outputExtension">The extension of the new joined file</param>
         public void FileJoin(string inputFolderPath, string outputFolderPath, string outputFileName, string outputExtension)
         {
+            //Reset class properties so it has a clean slate
+            ResetProperties();
+
             //Ensure that the input folder exists
             if (!Directory.Exists(inputFolderPath))
             {
@@ -278,6 +284,19 @@ namespace FileMasterLibrary
             byte[] transferBuffer = new byte[numberOfBytes];
             sourceStream.Read(transferBuffer, 0, numberOfBytes);
             destinationStream.Write(transferBuffer);
+        }
+
+        /// <summary>
+        /// Gives "this" object default properties so, it can be given a clean slate before attempting a file split or join
+        /// </summary>
+        private void ResetProperties()
+        {
+            IsValidated = false;
+            IsFinished = false;
+            StatusMessage = "";
+            ExitError = false;
+            NumFilesProcessed = 0;
+            TotalFiles = 0;
         }
     }
 }

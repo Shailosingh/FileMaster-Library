@@ -31,16 +31,16 @@ namespace FileMasterConsole
         {
             
             //Test out File Splitter
-            string inputFile = @"D:\Video\School Days HQ Kotonoha Opening.mp4";
-            string outputFolder = @"D:\Video\Piece Folder";
+            string inputFile = @"C:\Users\compu\Videos\The Heathers.mp4";
+            string outputFolder = @"C:\Users\compu\Videos\Piece Folder";
             int pieceSize = 8 * (int)Math.Pow(1000, 2); //8 MB
             StartSplit(inputFile, outputFolder, pieceSize);
             
             
             //Test out File Joiner
-            string inputFolderPath = @"D:\Video\Piece Folder";
+            string inputFolderPath = @"C:\Users\compu\Videos\Piece Folder";
             string outputFolderPath = inputFolderPath; //Send joined file to same directory as where pieces are
-            string outputFileName = "School Days OP";
+            string outputFileName = "The Heathers Musical";
             string outputExtension = "MP4";
             StartJoin(inputFolderPath, outputFolderPath, outputFileName, outputExtension);
             
