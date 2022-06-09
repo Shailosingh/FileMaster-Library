@@ -136,7 +136,6 @@ namespace FileMasterLibrary
                     using (FileStream currentPieceStream = File.OpenWrite(currentPieceDirectory))
                     {
                         CopyBlockOfBytesTo(currentInputStream, currentPieceStream, pieceSize);
-                        //currentInputStream.CopyTo(currentPieceStream, pieceSize);
                     }
 
                     //Completed processing piece
