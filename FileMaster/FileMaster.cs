@@ -12,7 +12,7 @@ when the operation had completed validation, completed operation the number of f
 processing, if there are any errorsand what the error message is.
 ==========================================================================================
 Program Description:
-FileMaster Library is offers fast and efficient methods to split up files into smaller 
+The FileMaster Library offers fast and efficient methods to split up files into smaller 
 chunks and join them back up in C#. This is useful for a variety of use cases, such as:
 
 1. Circumventing the upload limit of various websites/webapps (see the Discord Filemaster
