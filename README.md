@@ -13,3 +13,5 @@ However, if the file you wish to split is very large, there is a large amount of
 [Console Example](https://github.com/Shailosingh/FileMaster-Library/blob/master/FileMasterConsole/Program.cs)
 
 [WinForms Example](https://github.com/Shailosingh/DiscordFileMaster)
+
+[WinUI 3 Example](https://github.com/Shailosingh/DiscordFileMasterV2)
