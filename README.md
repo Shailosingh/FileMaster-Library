@@ -15,3 +15,5 @@ However, if the file you wish to split is very large, there is a large amount of
 [WinForms Example](https://github.com/Shailosingh/DiscordFileMaster)
 
 [WinUI 3 Example](https://github.com/Shailosingh/DiscordFileMasterV2)
+
+[NuGet Package Download](https://www.nuget.org/packages/FileMasterLibrary)
